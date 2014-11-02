@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Fysisk webb</title>
+
+		<meta name="description" content="Fysisk webb, presentation för avdelningsmöte">
+		<meta name="author" content="Mikael Jergefelt">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="presentation/css/reveal.min.css">
+		<link rel="stylesheet" href="presentation/css/theme/simple.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="presentation/lib/css/zenburn.css">
+
+		<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+		<script>
+			if( window.location.search.match( /print-pdf/gi ) ) {
+				var link = document.createElement( 'link' );
+				link.rel = 'stylesheet';
+				link.type = 'text/css';
+				link.href = 'css/print/pdf.css';
+				document.getElementsByTagName( 'head' )[0].appendChild( link );
+			}
+		</script>
+		<style>
+		  ul li {
+		  	padding-bottom: 0.5em !important;
+		  }
+		  h2, h3 {
+		  	padding-bottom: 0.2em !important;
+		  }
+		  ul li ul li {
+		  	font-size: 0.8em !important;
+		  }
+		</style>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+
+				<section>
+					<h2>Fysisk webb</h2>
+                    <p>“Fånga upp och koppla ihop aktuella verksamheter på KIB och KI <b>spegla</b> dessa i såväl biblioteksrummet som på webben"</p>
+				</section>
+
+				<section>
+					<img src="presentation/images/ble.jpg" style="max-height: 75%; border: none; box-shadow: none;" />
+					<p>Energisnålt, sänder “advertisements” via radiovågor</p>
+				</section>
+
+				<section>
+					<h2>Om iBeacons</h3>
+					<ul>
+						<li>Ingår i iOS sedan iOS7 (kräver minst iPhone 4S, iPad 3)</li>
+						<li>Signalerar till appar i bakgrunden</li>
+						<li style="list-style-type: none;">
+							<ul>
+								<li>Håller koll på avstånd och när du kommer och går. Upp till den lyssnande appen vad som ska hända.</li>
+							</ul>
+						</li>
+						<li>Sänder UUID + Major- + Minor-värde</li>
+						<li style="list-style-type: none;">
+							<ul>
+								<li>T ex: UUID för KIB (3A66FECC69CA43EA9DD12774795F6ACD), Major 01 för Solna, Minor 09 för skrivarrummet på plan 4.</li>
+							</ul>
+						</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Fördelar med iBeacons</h2>
+					<ul>
+						<li>Inbyggt i iOS</li>
+						<li>Lättillgänglig hårdvara</li>
+						<li>Kontextuella appar</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Nackdelar med iBeacons</h2>
+					<ul>
+						<li>Endast för iOS</li>
+						<li>Kan användas för spårning</li>
+						<li>Spam, "data rash"</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Om Physical Web</h2>
+					<ul>
+						<li>Skapat ur frustrationen över att behöva ha en app för allting</li>
+						<li>Öppen standard för att sända kontextuella URLer</li>
+						<li>Kan vara:</li>
+						<li style="list-style-type: none;">
+							<ul>
+								<li>en webbsida med information om något</li>
+								<li>webbapp för interaktion med något</li>
+								<li>djuplänk in i en native app</li>
+							</ul>
+						</li>
+						<li>Nystartat och experimentellt</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Physical Web exempel</h2>
+					<img src="presentation/images/pwex.jpg" style="max-height: 60%; border: none; box-shadow: none;" />
+					<p><a target="_new" href="http://www.youtube.com/watch?v=BL6djal9mqY&list=UUQEbVcPF3lBKYBA4FpTp04A">http://www.youtube.com/watch?v=BL6djal9mqY&list=UUQEbVcPF3lBKYBA4FpTp04A</a></p>
+				</section>
+
+				<section>
+					<h2>Fördelar med Physical Web</h2>
+					<ul>
+						<li>Plattformsoberoende</li>
+						<li>Inga proaktiva notifikationer</li>
+						<li>URLar är flexibla</li>
+						<li>Ingen spårning</li>
+						<li>Utvecklas helt öppet, alla kan bidra</li>
+					</ul>
+				</section>
+
+				<section>
+					<h2>Nackdelar med Physical Web</h2>
+					<ul>
+						<li>Experiment, publicerat 1 oktober 2014</li>
+						<li>Kräver app i dagsläget</li>
+						<li>Max 18 tecken för URL</li>
+					</ul>
+				</section>
+
+				<section>
+					<img src="presentation/images/comp.jpg" style="max-height: 80%; border: none; box-shadow: none;" />
+				</section>
+
+				<section>
+					<h2>Lekstuga!</h2>
+					<div style="width: 50%; float: left;">
+						<h3>Estimote iBeacons</h3>
+						<img src="presentation/images/estimote.jpg" style="max-height: 50%; border: none; box-shadow: none;" />
+						<p>iOS och Android</p>
+						<p >Beacons finns i rummet</p>
+					</div>
+					<div style="width: 50%; float: right;">
+						<h3>Skattjakt med<br/>Physical Web</h3>
+						<ul>
+							<li>Hitta bokstäver</li>
+							<li>Bilda ett ord</li>
+						</ul>
+						<p style="position: absolute; bottom: 0.8em;">Telefoner finns att låna om din inte stöder BLE</p>
+					</div>
+				</section>
+
+			</div>
+
+		</div>
+
+		<script src="presentation/lib/js/head.min.js"></script>
+		<script src="presentation/js/reveal.min.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+				// Parallax scrolling
+				// parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+				// parallaxBackgroundSize: '2100px 900px',
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'presentation/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'presentation/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'presentation/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'presentation/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'presentation/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'presentation/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
