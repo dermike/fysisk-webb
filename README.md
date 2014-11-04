@@ -1,4 +1,4 @@
-fysiskwebb
+fysisk-webb
 ==========
 
-"Fysisk webb" / "Physical web" presentation in Swedish for department meeting
+[Physical web](https://github.com/google/physical-web) and iBeacons presentation in Swedish for department meeting.
